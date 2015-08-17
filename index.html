@@ -106,7 +106,7 @@
         <div class="tab-pane" id="tab-tool">
             <div class="row feature">
                 <div class="col-md-7">
-                    <p class="lead">能够使用Fiddler、XAMPP等开发工具进行前后端数据交互模拟和PC端Chrome；能够在Chrome emluation模拟器中模拟移动端行为接口调试。</p>
+                    <p class="lead">F12开发者工具，WEB前端的宝；能够使用Fiddler、XAMPP等开发工具进行前后端数据交互模拟和PC端Chrome；能够在Chrome emluation模拟器中模拟移动端行为接口调试。</p>
                 </div>
                 <div class="col-md-5">
                     <img class="img-circle img-responsive" src="images/tool.jpg"
@@ -150,25 +150,6 @@
 
 <script src="js/jquery-1.11.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script>
-    $(function () {
-        $('#ad-carousel').carousel();
-        $('#menu-nav .navbar-collapse a').click(function (e) {
-            var href = $(this).attr('href');
-            var tabId = $(this).attr('data-tab');			
-            if ('#' !== href) {
-                e.preventDefault();
-                //$(document).scrollTop($(href).offset().top - 100);
-				$(document).scrollTop($(href).offset().top-70);
-				console.log($(href).offset().top);
-				console.log(href);
-				console.log($(document).scrollTop());
-                if (tabId) {
-                    $('#feature-tab a[href=#' + tabId + ']').tab('show');
-                }
-            }
-        });
-    });
-</script>
+<script src="js/cv.js"></script>
 </body>
 </html>
